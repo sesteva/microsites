@@ -1,0 +1,20 @@
+
+<div>
+    <h4>Subscribe to our newsletter</h4>
+    <form>
+        <fieldset>
+            <label>Name:</label>
+            <input name="name" type="text" ng-model="name"/>
+            <label>Email:</label>
+            <input name="email" type="email"/>
+            <button ng-click="alreadySubscribed = true">Subscribe me!</button>
+        </fieldset>
+    </form>
+    <div ng-show="alreadySubscribed" class="alert">You'll hear from us, {{name}}</div>
+    <div>
+        This is an Angular Directive. Semantic Html. </br>
+        This is reusable and alwyas up-to-date </br>
+        I dont care about SEO/SEM for this one.
+    </div>
+
+</div>

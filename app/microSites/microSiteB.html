@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Site B</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body ng-app="myAppApp">
+
+<!-- htmlbuild:section layout.header -->
+<!-- /htmlbuild -->
+
+<!-- Add your site or application content here -->
+<div class="container">
+    <div class="row">
+        <div class="span8">
+            <div class="hero-unit ">This is static context inside my microSiteB</div>
+        </div>
+        <div class="span4">
+            <tvly-date></tvly-date>
+            <tvly-subscribe></tvly-subscribe>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span4"><tvly-date/></div>
+        <div class="span8"> Another block of static text </div>
+
+    </div>
+</div>
+
+<!-- htmlbuild:section layout.footer -->
+<!-- /htmlbuild -->
+
+<script src="../bower_components/angular/angular.js"></script>
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="../scripts/app.js"></script>
+<script src="../scripts/directives/subscribe.js"></script>
+<script src="../scripts/directives/date.js"></script>
+<!-- endbuild -->
+</body>
+</html>
